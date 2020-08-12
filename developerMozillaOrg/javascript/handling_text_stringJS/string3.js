@@ -7,6 +7,7 @@ Store the new quote in a variable called fixedQuote.
 2. In fixedQuote, replace "green eggs and ham" with another food that you really don't like.
 3. There is one more small fix to do — add a full stop onto the end of the quote,
 and save the final version in a variable called finalQuote.
+<<<<<<< HEAD
 */
 
 let quote = 'I dO nOT lIke gREen eGgS anD HAM';
@@ -27,3 +28,6 @@ para2.textContent = finalQuote;
 section.appendChild(para1);
 section.appendChild(para2);
     
+=======
+*/
+>>>>>>> 12f79729d2216c3d33d0a1190aaf62d1e148ba4e
