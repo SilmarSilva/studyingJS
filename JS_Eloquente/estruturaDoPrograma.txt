@@ -1,0 +1,87 @@
+- Expressões e afirmações
+
+Um programa é simplesmente uma lista de afirmações. O tipo mais simples de afirmação
+é uma expressão com um ponto e vírgula (;) depois dela.
+ex.:
+1;
+!false;
+
+- Ponto e vírgula:
+O JS em alguns casos permite que o ; seja omitido ao final de uma declaração,
+em outros ele é obrigatório ou o código pode se comportar de forma não esperada.
+É recomendado sempre utilizar ; ao final das declarações.
+
+- Variaveis:
+É a forma como o JS amazena informações. A declaração de uma variável pode ser feita:
+
+var caught = 5 * 5;
+
+Depois da variavel ser definida, o nome dela pode ser utilizado como uma expressão e o valor
+da expressão é mantido pela variável:
+
+var ten = 10;
+console.log(ten * ten); // 100
+
+Devemos imaginar uma variável como um braço e não como uma caixa. Variavéis não contêm valores,
+elas os agarram. Duas variáveis podem referenciar o mesmo valor, porém só os valores que o programa
+mantém podem ser acessados por ele. Quando vocẽ precisa lembrar de algo, você estica o braço para
+pegar ou usa um outro braço para fazer isso. Quando definimos uma variável sem atribuir valor,
+o braço fica livre, quando você pergunta pelo valor que ele carrega ele vai retornar "undefined".
+
+var car;
+console.log(car);// undefined
+
+- Palavras-chave e Palavras Reservadas
+São palavras com um significado especial dentro do JS, assim não são permitidas para serem 
+usadas como nome válido para variáveis.
+Alguns exemplos:
+break, casa, catch, continue, debugger, defaulte, delete, do, else, false, finally, for, this,
+function, if, implements, in, instanceof, interface, let, new, null, package, private, yield,
+protected, public, return, static, switch, throw, true, try, typeof, var, void, while, with.
+
+- Funções
+Uma função é um pedaço de um programa envolvido por um valor. E este valor pode ser aplicado para
+executar o programa envolvido.
+Executar uma função é denominado invocar, chamar ou aplicar uma função. Você pode chamar uma função
+colocando os parênteses depois da expressão que produz um valor de função. Normalmente você irá usar o
+nome da variável que contém uma função diretamente. Os valores entre os parênteses são passados ao
+programa dentro da função. No exemplo, a função "alert" usou a string que foi passada como o texto a ser
+mostrado na caixa de diálogo.
+
+alert("Hello world!");
+
+Os valores passados para funções são chamados de função alert arguments (argumentos). A
+precisa somente de um deles, mas outras funções podem precisar de diferentes quantidades ou
+tipos de argumentos.
+
+- A função console.log()
+Usamos o console.log() para saída de valores. De forma geral variáveis não podem conter pontos,
+mas nesse caso não é uma simples variável é uma expressão que retorna o campo "log" do valor
+contido no console.
+
+- Retornando valores
+Mostrar uma caixa de diálogo ou escrever texto na tela é um efeito colateral. Muitas funções são úteis por causa
+dos efeitos que elas produzem. É também possível para uma função produzir um valor, no caso de não ser
+necessário um efeito colateral. Por exemplo, temos a função que retorna o maior valor entre eles.
+
+console.log(Math.max(2, 4));// 4
+
+Quando uma função produz um valor, é dito que ela retorna (return) ele. Em JavaScript, tudo que produz um valor
+é uma expressão, o que significa que chamadas de função podem ser usadas dentro de expressões maiores.
+
+- prompt e confirm
+Existem algumas funções que mostram janelas nos navegadores, onde vocẽ pode perguntar ao usuário uma
+questão Ok/Cancel usando o "confirm", e isto retornará um valor booleano: true (Ok) ou false (cancel).
+Já o prompt é usado para criar uma pergunta aberta.
+
+- Controle de fluxo
+Quando um programa tem mais de uma declaração elas são executadas de cima pra baixo.
+
+var theNumber = Number(prompt("Insira um número", ""));
+alert("A raíz quadrada deste número é " + theNumber * theNumber);
+
+A função "Number" converte o valor para um tipo número, pois o prompt recebe um valor do tipo string.
+O mesmo pode acontecer para outros tipos como o boolean.
+o controle de fluxo ocorre da esquerca para direira  e de cima pra baixo.
+
+- Execução condicional (pag. 18)
