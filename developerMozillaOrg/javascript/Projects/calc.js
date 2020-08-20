@@ -8,9 +8,10 @@ let subtracao;
 let multiplicacao;
 let divisao;
 let resultado;
-let valorEntrada = prompt('digite aqui');
+
 
 while (valorEntrada !== '=') {
+    let valorEntrada = prompt('digite aqui');
     soma = valorEntrada + valorEntrada;
     subtracao = valorEntrada - valorEntrada;
     multiplicacao = valorEntrada * valorEntrada;
