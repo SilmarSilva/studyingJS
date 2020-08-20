@@ -6,11 +6,19 @@
 5. Converter o texto alternar os caracteres entre minúsculo e maiúsculo;
 */
 
-let enterText = prompt('');
-let texToAllUpper;
-let textToallLower;
-let textFirstUpper;
-let textFirstFrase;
-let textAlterUpperLower;
-let textAlterLowerUpper;
-let stratChange;
+//let enterText = prompt('');
+let textToAllUpper = enterText.toUpperCase();
+let textToallLower = enterText.toLowerCase();
+let textFirstUpper = textToallLower[0].toUpperCase() + textToallLower.slice(1);
+//let textAlterUpperLower;
+//let textAlterLowerUpper;
+//let startChange;
+
+function textFirstFrase(str) {
+    return str.replace(
+        /\w\S*/g,
+        function(txt) {
+            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        }
+    );
+}

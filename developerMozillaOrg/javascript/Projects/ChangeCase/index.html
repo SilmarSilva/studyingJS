@@ -8,8 +8,12 @@
 
 <body>
     <h1>Conversor de caracteres do tipo texto</h1>
-    <button>Converter</button>
-  
+    <form>
+        Input:
+        <br /><textarea name="input" onchange="form.output.value=textFirstFrase(this.value)"  onkeyup="form.output.value=textFirstFrase(this.value)"></textarea>
+        <br />Output:
+        <br /><textarea name="output" readonly onclick="select(this)"></textarea>
+    </form>
 
 
 
